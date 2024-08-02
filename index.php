@@ -6,8 +6,6 @@
  * @package WordPress
  */
 
-//  Sample Change
-
 /**
  * Tells WordPress to load the WordPress theme and output it.
  *
