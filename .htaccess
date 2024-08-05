@@ -15,3 +15,15 @@ RewriteRule . /wonderhomenaturals/index.php [L]
 </IfModule>
 
 # END WordPress
+
+# Begin AIOWPSEC Firewall
+	<IfModule mod_php5.c>
+		php_value auto_prepend_file 'C:/laragon/www/wonderhomenaturals/aios-bootstrap.php'
+	</IfModule>
+	<IfModule mod_php7.c>
+		php_value auto_prepend_file 'C:/laragon/www/wonderhomenaturals/aios-bootstrap.php'
+	</IfModule>
+	<IfModule mod_php.c>
+		php_value auto_prepend_file 'C:/laragon/www/wonderhomenaturals/aios-bootstrap.php'
+	</IfModule>
+# End AIOWPSEC Firewall
