@@ -12,7 +12,7 @@
 $GLOBALS['aiowps_firewall_rules_path'] = __DIR__.'/wp-content/uploads/aios/firewall-rules/';
 
 $GLOBALS['aiowps_firewall_data'] = array(
-	'ABSPATH' => 'C:/laragon/www/wonderhomenaturals/',
+	'ABSPATH' => 'C:/xampp/htdocs/wonderhomenaturals/',
 );
 
 // Begin AIOWPSEC Firewall
