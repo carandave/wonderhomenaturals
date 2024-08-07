@@ -13,3 +13,5 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /wonderhomenaturals/index.php [L]
 </IfModule>
+
+# END WordPress
