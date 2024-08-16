@@ -1,0 +1,7 @@
+2024-08-16T07:44:13+00:00 INFO Payment gateway enabled: "Card Payments via PayMongo"
+2024-08-16T07:53:19+00:00 INFO Payment gateway enabled: "GCash Gateway via PayMongo"
+2024-08-16T07:53:41+00:00 INFO Payment gateway enabled: "Direct bank transfer"
+2024-08-16T07:53:46+00:00 INFO Payment gateway enabled: "GrabPay Gateway via PayMongo"
+2024-08-16T07:53:51+00:00 INFO Payment gateway enabled: "Maya Payments via PayMongo"
+2024-08-16T08:08:40+00:00 ERROR [Create Payment Intent] Response - You need to use basic authentication to proceed. Go to https://developers.paymongo.com/docs/authentication to know more about our API authentication.
+2024-08-16T08:10:08+00:00 INFO Payment gateway enabled: "Cash on delivery"

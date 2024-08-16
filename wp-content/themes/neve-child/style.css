@@ -7,3 +7,7 @@ Template: neve
 Version: 1.0
 Text Domain: neve-child
 */
+
+.dgwt-wcas-search-icon .js-dgwt-wcas-search-icon-handler{
+	background-color: red;
+}
