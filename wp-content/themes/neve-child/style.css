@@ -31,3 +31,25 @@ Text Domain: neve-child
 /* Logo Styling End*/
 
 
+/* Custom Order Status Color */
+.order-status.status-shipped {
+	background-color: #DF7F1C;
+	border-radius: 5px !important;
+	color: #ffffff;
+	/* background-color: #f0412a ; */
+}
+
+.order-status.status-delivered {
+	background-color: #38761D;
+	border-radius: 5px !important;
+	color: #ffffff;
+}
+
+.order-status.status-processing {
+	background-color: orange;
+	border-radius: 5px !important;
+	color: white;
+}
+
+
+

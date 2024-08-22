@@ -48,6 +48,35 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	 */
 	do_action( 'woocommerce_shop_loop_item_title' );
 
+	// Custom code to display product attributes.
+	
+	// Start Displaying of Attributes (Scent and Size) under the Title of Product
+	$attributes = $product->get_attributes();
+
+	if ( $attributes ) {
+	    echo '<ul class="custom-attributes" style="background-color: #00895B; text-align: center; font-size: 12px; color: #F1F8E0; border-radius: 5px; padding-top: 5px; padding-bottom: 5px; display: flex; justify-content: center; align-items: center;">';
+	    foreach ( $attributes as $attribute ) {
+	        if ( $attribute->get_variation() ) {
+	            continue;
+	        }
+
+	        
+	        $value = wc_get_product_terms( $product->get_id(), $attribute->get_name(), array( 'fields' => 'names' ) );
+
+	        echo '<li style="margin: 0; padding: 0; margin-right: 5px; margin-left: 5px;" >' . esc_html( implode( ', ', $value ) ) . '</li>';
+	    }
+	    echo '</ul>';
+	}
+
+
+
+
+	
+	
+	
+
+	// End Displaying of Attributes (Scent and Size) under the Title of Product
+
 	/**
 	 * Hook: woocommerce_after_shop_loop_item_title.
 	 *
