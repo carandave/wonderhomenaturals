@@ -1,10 +1,18 @@
 <?php
 
+// Loads parent script codes
+function custom_child_theme_scripts() {
+    // Enqueue the script
+    wp_enqueue_script( 'custom-script', get_stylesheet_directory_uri() . '/script.js', array(), null, true  );
+}
+add_action( 'wp_enqueue_scripts', 'custom_child_theme_scripts' );
+
+
 /* Loads parent stylesheet */
-add_action( 'wp_enqueue_scripts', 'wpchild_enqueue_styles' );
 function wpchild_enqueue_styles(){
   wp_enqueue_style( 'wpm-neve-style', get_template_directory_uri() . '/style.css' );
 }
+add_action( 'wp_enqueue_scripts', 'wpchild_enqueue_styles' );
 
 
 // Logo Change Start
@@ -143,6 +151,21 @@ function handle_buy_now() {
 add_action( 'template_redirect', 'handle_buy_now' );
 
 // END Add BUY NOW button beside ADD TO CART in Single Product
+
+
+
+// START add text under the Cart Coupon
+function add_paragraph_under_coupon_button() {
+    echo '<div style="width: 100%; display flex; justify-content: center; align-items: center; margin-top: -50px!important; margin-bottom: 60px !important; font-family: Poppins; font-size: 16px"><p style="width: 80%; text-align:center; ">For first time order, you can use <b>FIRSTTIMEORDER</b> code for free shipping. (P1500 min. spend and P2000 max. spend)</p></div>';
+}
+add_action( 'woocommerce_after_cart_table', 'add_paragraph_under_coupon_button');
+// END add text under the Cart Coupon
+
+
+
+
+
+
 
 
 

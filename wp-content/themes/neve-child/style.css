@@ -51,5 +51,24 @@ Text Domain: neve-child
 	color: white;
 }
 
+/* Start Styling for Cart Totals and Points Discount */
+/* .cart-collaterals{
+	display: flex !important;
+	flex-direction: column !important;
+	width: 100% !important;
+}
+
+.cart_totals.calculated_shipping{
+	width: 50% !important;
+	order: 2 !important;
+	margin-left: 50% !important;
+}
+
+.cart-collaterals.cross-sells{
+	width: 100% !important;
+	order: 1 !important;
+} */
+/* End Styling for Cart Totals and Points Discount */
+
 
 

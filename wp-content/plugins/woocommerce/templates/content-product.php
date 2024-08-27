@@ -63,7 +63,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	        
 	        $value = wc_get_product_terms( $product->get_id(), $attribute->get_name(), array( 'fields' => 'names' ) );
 
-	        echo '<li style="margin: 0; padding: 0; margin-right: 5px; margin-left: 5px;" >' . esc_html( implode( ', ', $value ) ) . '</li>';
+	        echo '<li style="margin: 0; padding: 10px 0; margin-right: 5px; margin-left: 5px; line-height: 16px; min-height: 20px; display:flex; justify-content: center; align-items: center;" >' . esc_html( implode( ', ', $value ) ) . '</li>';
 	    }
 	    echo '</ul>';
 	}
