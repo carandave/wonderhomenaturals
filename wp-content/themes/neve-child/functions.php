@@ -162,6 +162,15 @@ add_action( 'woocommerce_after_cart_table', 'add_paragraph_under_coupon_button')
 // END add text under the Cart Coupon
 
 
+/* Custom Shipping Method Description */
+// function custom_shipping_desc( $method ) {
+//     if ( $method -> id === 'local_pickup:2' ) {
+//         echo '<p class="ship_desc"><b> Note: </b>3-5 days via logistics</p>';
+//     }
+// }
+// add_action( 'woocommerce_after_shipping_rate', 'custom_shipping_desc' );
+
+
 
 
 
