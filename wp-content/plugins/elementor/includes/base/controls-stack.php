@@ -692,8 +692,19 @@ abstract class Controls_Stack extends Base_Object {
 
 		$controls_keys = array_keys( $registered_controls );
 
-		return $controls_keys[ $control_index ];
+		return $controls_keys[ $control_index ];	
 	}
+
+	// $registered_controls = $this->get_controls();
+	// var_dump($registered_controls);
+
+	// if ( ! is_array( $registered_controls ) ) {
+	// 	return null; // or handle the error appropriately
+	// }
+
+	// $controls_keys = array_keys( $registered_controls );
+
+	// return $controls_keys[ $control_index ];
 
 	/**
 	 * Get control index.

@@ -216,15 +216,15 @@ abstract class Widget_Base extends Element_Base {
 	 *
 	 * @return int Widget controls pointer index.
 	 */
-	public function get_pointer_index() {
-		$injection_point = $this->get_injection_point();
+	// public function get_pointer_index() {
+	// 	$injection_point = $this->get_injection_point();
 
-		if ( null !== $injection_point ) {
-			return $injection_point['index'];
-		}
+	// 	if ( null !== $injection_point ) {
+	// 		return $injection_point['index'];
+	// 	}
 
-		return count( $this->get_stack( false )['controls'] );
-	}
+	// 	return count( $this->get_stack( false )['controls'] );
+	// }
 
 	/**
 	 * Show in panel.
