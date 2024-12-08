@@ -1,0 +1,74 @@
+/*
+Theme Name: Neve Child
+Description: Child theme for Neve. You can now safely customize it and not risk losing your customizations.
+Author: WPTurbo
+Author URI: https://wpturbo.dev
+Template: neve
+Version: 1.0
+Text Domain: neve-child
+*/
+
+/* Logo Styling Start*/
+.login h1 a {
+	background-repeat: no-repeat;
+	background-image: url("http://localhost/wonderhomenaturals/wp-content/uploads/2024/08/wonderhome-logo-full-color-rgb-600px@72ppi-6.png");
+	background-position: center center;
+	background-size: contain !important;
+	width: 100% !important;
+	height: 350px;
+	margin-top: -100px;
+}
+
+.login h1 a.active {
+	color: transparent;
+	border: none;
+	outline: 0;
+}
+
+#loginform{
+	margin-top: -100px;
+}
+/* Logo Styling End*/
+
+
+/* Custom Order Status Color */
+.order-status.status-shipped {
+	background-color: #DF7F1C;
+	border-radius: 5px !important;
+	color: #ffffff;
+	/* background-color: #f0412a ; */
+}
+
+.order-status.status-delivered {
+	background-color: #38761D;
+	border-radius: 5px !important;
+	color: #ffffff;
+}
+
+.order-status.status-processing {
+	background-color: orange;
+	border-radius: 5px !important;
+	color: white;
+}
+
+/* Start Styling for Cart Totals and Points Discount */
+/* .cart-collaterals{
+	display: flex !important;
+	flex-direction: column !important;
+	width: 100% !important;
+}
+
+.cart_totals.calculated_shipping{
+	width: 50% !important;
+	order: 2 !important;
+	margin-left: 50% !important;
+}
+
+.cart-collaterals.cross-sells{
+	width: 100% !important;
+	order: 1 !important;
+} */
+/* End Styling for Cart Totals and Points Discount */
+
+
+

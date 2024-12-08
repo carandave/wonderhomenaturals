@@ -1,4 +1,9 @@
 <?php
+// Begin AIOWPSEC Firewall
+if (file_exists('C:/xampp/htdocs/wonderhomenaturals/aios-bootstrap.php')) {
+	include_once('C:/xampp/htdocs/wonderhomenaturals/aios-bootstrap.php');
+}
+// End AIOWPSEC Firewall
 /**
  * The base configuration for WordPress
  *
@@ -20,6 +25,8 @@
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
+define('WP_ALLOW_REPAIR', true);
+
 define( 'DB_NAME', 'wonderhomenaturals' );
 
 /** Database username */
